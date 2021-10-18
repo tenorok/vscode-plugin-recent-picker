@@ -2,10 +2,12 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import FixedUniqArray from './FixedUniqArray';
 
-const RECENT_LENGTH = 3;
+const config = vscode.workspace.getConfiguration('recent-picker');
 
-// One extra item for current file.
-const fixedUniqArray = new FixedUniqArray<string>(RECENT_LENGTH + 1);
+const fixedUniqArray = new FixedUniqArray<string>(
+    // One extra item for current file.
+    config.get<number>('length', 30) + 1,
+);
 
 export function activate(context: vscode.ExtensionContext) {
     const activeFileName = getActiveFileName();
