@@ -113,7 +113,7 @@ async function onPickFile(relativeFileName: string) {
         );
         await vscode.window.showTextDocument(document);
     } catch (err) {
-        const message = err instanceof Error ? err.message : (err as string);
+        const message = err instanceof Error ? err.message : String(err);
         vscode.window.showErrorMessage(message);
     }
 }

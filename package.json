@@ -1,7 +1,8 @@
 {
   "name": "recent-picker",
   "displayName": "RecentPicker",
-  "description": "",
+  "description": "Picker of recent opened files",
+  "icon": "icon.png",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.61.0"
