@@ -7,9 +7,14 @@
   "engines": {
     "vscode": "^1.61.0"
   },
+  "publisher": "tenorok",
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenorok/vscode-plugin-recent-picker.git"
+  },
   "activationEvents": [
     "*",
     "onCommand:recent-picker.open"
