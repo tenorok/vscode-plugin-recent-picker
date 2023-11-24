@@ -3,7 +3,7 @@
   "displayName": "RecentPicker",
   "description": "Picker of recent opened files",
   "icon": "images/icon.png",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.61.0"
   },
@@ -16,8 +16,7 @@
     "url": "https://github.com/tenorok/vscode-plugin-recent-picker.git"
   },
   "activationEvents": [
-    "*",
-    "onCommand:recent-picker.open"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {

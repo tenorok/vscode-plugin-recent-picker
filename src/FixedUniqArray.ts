@@ -1,4 +1,4 @@
-export default class FixedArray<T> {
+export default class FixedUniqArray<T> {
     private list = new Set<T>();
 
     constructor(private length: number) {}
